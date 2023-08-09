@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+        "name": "Road Stuff",
+		"description": "By CodanRaigen21, Restored by Goofy9506",
+		"uuid": "725bc88f-fc9a-4b9f-8ff0-3c2ff86ea89e",
+		"version": "1.0.0-beta",
+		"min_engine_version": [
+			1,
+			19,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "e2030c22-c8cf-4900-95b3-7060b30a1923",
+			"version": "1.0.0-beta"
+		}
+	],
+	"dependencies": [
+		{
+			"version": "1.0.0-beta",
+			"uuid": "897fa213-22a0-4a00-8fc9-5b1d946054e4"
+		}
+	]
+}

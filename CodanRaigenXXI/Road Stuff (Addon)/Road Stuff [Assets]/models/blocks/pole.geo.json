@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pole",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "pole",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-2, 0, -2],
+							"size": [4, 20, 4],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [4, 31]},
+								"east": {"uv": [4, 0], "uv_size": [4, 31]},
+								"south": {"uv": [8, 0], "uv_size": [4, 31]},
+								"west": {"uv": [12, 0], "uv_size": [4, 31]},
+								"up": {"uv": [28, 16], "uv_size": [4, 4]},
+								"down": {"uv": [28, 24], "uv_size": [4, -4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
