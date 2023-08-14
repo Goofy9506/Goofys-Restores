@@ -1,9 +1,0 @@
-{
-    "resource_pack_name": "vanilla",
-    "texture_data": {
-      "stop_sign": {
-        "textures": "textures/items/signs/stop/stop_sign"
-      }
-    },
-    "texture_name": "atlas.items"
-}

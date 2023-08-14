@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Resource Pack for Nature's Spirit Beta, by Eko0087, Goofy, and Rewby23. Credit to clouddspider for the door and fence code!",
+		"name": "Nature's Spirit Survival Compatibility (v5.2.0)",
+		"uuid": "a04b218d-b580-4f8a-9927-47f0f259400b",
+		"version": "0.0.1-alpha",
+		"min_engine_version": [
+			1,
+			19,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "2dfb3565-d7c3-41eb-85a2-6d736501d6e6",
+			"version": "0.0.1-alpha"
+		}
+	],
+	"dependencies": [
+		{
+			"version": "0.0.1-alpha",
+			"uuid": "8b8e2e22-2938-4eae-bec7-193f70f7e5ed"
+		}
+	]
+}
