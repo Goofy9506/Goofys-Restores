@@ -1,0 +1,11 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+      "allay_plushie": {
+        "textures": "textures/blocks/flying/allay_plushie"
+      }
+    },
+    "texture_name": "atlas.terrain"
+}
