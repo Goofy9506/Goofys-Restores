@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-        "name": "Plushies [v0.0.1-alpha]",
 		"description": "An Addon about animal plushies!",
+        "name": "Plushies [v0.0.1-alpha]",
 		"uuid": "a04b218d-b580-4f8a-9927-47f0f259400b",
 		"version": "0.0.1-alpha",
 		"min_engine_version": [
