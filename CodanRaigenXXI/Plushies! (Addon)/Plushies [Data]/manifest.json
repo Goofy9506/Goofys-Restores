@@ -1,21 +1,21 @@
 {
-	"format_version": 2,
-	"header": {
-		"name": "Plushies [v0.0.1-alpha]",
-		"description": "An Addon about animal plushies!",
-		"uuid": "95769bdd-1b17-4ee0-bfd7-3bfcf61cfd22",
-		"version": "0.0.1-alpha",
-		"min_engine_version": [
-			1,
-			19,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "data",
-			"uuid": "77aecef5-9d64-4132-ae5f-970ffe694604",
-			"version": "0.0.1-alpha"
-		}
-	]
+    "format_version": 2,
+    "header": {
+        "name": "Plushies [v0.0.1-alpha]",
+        "description": "An Addon about animal plushies!",
+        "uuid": "95769bdd-1b17-4ee0-bfd7-3bfcf61cfd22",
+        "version": "0.0.1-alpha",
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "77aecef5-9d64-4132-ae5f-970ffe694604",
+            "version": "0.0.1-alpha"
+        }
+    ]
 }
