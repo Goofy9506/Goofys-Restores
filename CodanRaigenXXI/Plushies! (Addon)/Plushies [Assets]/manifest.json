@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"description": "Resource Pack for Nature's Spirit Beta, by Eko0087, Goofy, and Rewby23. Credit to clouddspider for the door and fence code!",
-		"name": "Nature's Spirit Survival Compatibility (v5.2.0)",
+        "name": "Plushies [v0.0.1-alpha]",
+		"description": "An Addon about animal plushies!",
 		"uuid": "a04b218d-b580-4f8a-9927-47f0f259400b",
 		"version": "0.0.1-alpha",
 		"min_engine_version": [
