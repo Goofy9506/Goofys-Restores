@@ -64,13 +64,7 @@
       {
         "condition": "q.block_property('plushies:pose') == 2",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie_stand"
-        }
-      },
-      {
-        "condition": "q.block_property('plushies:pose') == 3",
-        "components": {
-          "minecraft:geometry": "geometry.allay_plushie_stand"
+          "minecraft:geometry": "geometry.allay_plushie_fly_stand"
         }
       }
     ],
@@ -129,12 +123,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }

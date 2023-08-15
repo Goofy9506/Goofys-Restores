@@ -56,18 +56,6 @@
             "size": [7.5, 8, 15]
           }
         }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 2)",
-        "components": {
-          "minecraft:geometry": "geometry.camel_saddle_plushie"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 3)",
-        "components": {
-          "minecraft:geometry": "geometry.camel_saddle_plushie"
-        }
       }
     ],
     "components": {
@@ -119,18 +107,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
-            "set_block_property": {
-              "plushies:pose": "2"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }
