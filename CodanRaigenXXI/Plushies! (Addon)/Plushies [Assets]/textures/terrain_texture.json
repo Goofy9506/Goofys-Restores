@@ -20,6 +20,9 @@
       },
       "camel_plushie": {
         "textures": "textures/blocks/camel/camel_plushie"
+      },
+      "ghast_plushie": {
+        "textures": "textures/blocks/ghast/ghast_plushie"
       }
     },
     "texture_name": "atlas.terrain"
