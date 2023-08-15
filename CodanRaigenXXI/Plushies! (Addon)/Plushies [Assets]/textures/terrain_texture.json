@@ -3,8 +3,17 @@
     "padding": 8,
     "resource_pack_name": "vanilla",
     "texture_data": {
+      "stand": {
+        "textures": "textures/blocks/stand"
+      },
+      "allay_plushie_stand": {
+        "textures": "textures/blocks/flying/allay/allay_plushie_stand"
+      },
       "allay_plushie": {
-        "textures": "textures/blocks/flying/allay_plushie"
+        "textures": "textures/blocks/flying/allay/allay_plushie"
+      },
+      "warden_plushie": {
+        "textures": "textures/blocks/warden/warden_plushie"
       }
     },
     "texture_name": "atlas.terrain"
