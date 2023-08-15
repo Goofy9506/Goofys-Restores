@@ -49,19 +49,7 @@
       {
         "condition": "q.block_property('plushies:pose') == 1",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie_stand"
-        }
-      },
-      {
-        "condition": "q.block_property('plushies:pose') == 2",
-        "components": {
-          "minecraft:geometry": "geometry.warden_plushie_stand"
-        }
-      },
-      {
-        "condition": "q.block_property('plushies:pose') == 3",
-        "components": {
-          "minecraft:geometry": "geometry.warden_plushie_stand"
+          "minecraft:geometry": "geometry.warden_plushie_roaring_stand"
         }
       }
     ],
@@ -114,18 +102,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
-            "set_block_property": {
-              "plushies:pose": "2"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }
