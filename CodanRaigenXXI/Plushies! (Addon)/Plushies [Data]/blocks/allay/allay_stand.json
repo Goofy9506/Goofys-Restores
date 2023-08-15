@@ -87,7 +87,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "allay_plushie_stand",
+          "texture": "allay_plushie",
           "render_method": "alpha_test"
         }
       },

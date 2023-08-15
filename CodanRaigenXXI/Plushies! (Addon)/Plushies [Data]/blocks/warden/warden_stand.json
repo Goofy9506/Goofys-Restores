@@ -78,7 +78,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "warden_plushie_stand",
+          "texture": "warden_plushie",
           "render_method": "alpha_test"
         }
       },

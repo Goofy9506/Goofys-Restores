@@ -6,17 +6,11 @@
       "stand": {
         "textures": "textures/blocks/stand"
       },
-      "allay_plushie_stand": {
-        "textures": "textures/blocks/flying/allay/allay_plushie_stand"
-      },
       "allay_plushie": {
-        "textures": "textures/blocks/flying/allay/allay_plushie"
+        "textures": "textures/blocks/allay/allay_plushie"
       },
       "warden_plushie": {
         "textures": "textures/blocks/warden/warden_plushie"
-      },
-      "warden_plushie_stand": {
-        "textures": "textures/blocks/warden/warden_plushie_stand"
       },
       "camel_plushie": {
         "textures": "textures/blocks/camel/camel_plushie"

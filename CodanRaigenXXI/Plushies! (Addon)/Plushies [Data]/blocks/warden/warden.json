@@ -8,7 +8,7 @@
           "values": { "min": 0, "max": 4 }
         },
         "plushies:pose": {
-          "values": { "min": 0, "max": 3 }
+          "values": { "min": 0, "max": 2 }
         }
       }
     },
@@ -68,13 +68,7 @@
       {
         "condition": "(q.block_property('plushies:pose') == 2)",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 3)",
-        "components": {
-          "minecraft:geometry": "geometry.warden_plushie"
+          "minecraft:geometry": "geometry.warden_plushie_roaring"
         }
       }
     ],
@@ -133,12 +127,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }
