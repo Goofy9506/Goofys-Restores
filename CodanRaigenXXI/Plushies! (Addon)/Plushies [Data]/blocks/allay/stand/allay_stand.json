@@ -3,46 +3,42 @@
   "minecraft:block": {
     "description": {
       "identifier": "plushies:allay_plushie_stand",
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"], 
+          "y_rotation_offset": 180 
+        }
+      },
       "properties": {
-        "plushies:rotation": {
-          "values": { "min": 0, "max": 3 } 
-        },
+        "plushies:rotation": [0, 1, 2, 3],
         "plushies:pose": {
-          "values": { "min": 0, "max": 3 } 
+          "values": { "min": 0, "max": 3 }
         }
       }
     },
     "permutations": [
       {
-        "condition": "(q.block_property('plushies:rotation') == 0)",
+        "condition": "q.block_property('minecraft:cardinal_direction') == 'north'",
         "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 180, 0]
-          }
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
         }
       },
       {
-        "condition": "(q.block_property('plushies:rotation') == 1)",
+        "condition": "q.block_property('minecraft:cardinal_direction') == 'west'",
         "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 0, 0]
-          }
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
         }
       },
       {
-        "condition": "(q.block_property('plushies:rotation') == 2)",
+        "condition": "q.block_property('minecraft:cardinal_direction') == 'south'",
         "components": {
-          "minecraft:transformation": {
-            "rotation": [0, -90, 0]
-          }
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
         }
       },
       {
-        "condition": "(q.block_property('plushies:rotation') == 3)",
+        "condition": "q.block_property('minecraft:cardinal_direction') == 'east'",
         "components": {
-          "minecraft:transformation": {
-            "rotation": [0, 90, 0]
-          }
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
         }
       },
       {
@@ -106,9 +102,9 @@
     "events": {
       "set_placement": {
         "set_block_property": {
-          "plushies:rotation": "query.cardinal_facing_2d-2"
-      }
-  },
+          "minecraft:cardinal_direction": "query.cardinal_facing_2d"
+        }
+      },
       "pose": {
         "sequence": [
           {
