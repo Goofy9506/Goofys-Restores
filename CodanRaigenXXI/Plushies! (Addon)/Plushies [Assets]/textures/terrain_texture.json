@@ -17,6 +17,18 @@
       },
       "ghast_plushie": {
         "textures": "textures/blocks/ghast/ghast_plushie"
+      },
+      "ravager_plushie": {
+        "textures": "textures/blocks/ravager/ravager_plushie"
+      },
+      "ravager_pillager_plushie": {
+        "textures": "textures/blocks/ravager/ravager_pillager_plushie"
+      },
+      "ravager_vindicator_plushie": {
+        "textures": "textures/blocks/ravager/ravager_vindicator_plushie"
+      },
+      "ravager_evoker_plushie": {
+        "textures": "textures/blocks/ravager/ravager_evoker_plushie"
       }
     },
     "texture_name": "atlas.terrain"
