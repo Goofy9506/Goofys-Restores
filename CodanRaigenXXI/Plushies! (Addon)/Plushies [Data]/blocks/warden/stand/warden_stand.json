@@ -2,10 +2,10 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:warden_plushie",
+      "identifier": "plushies:warden_plushie_stand",
       "properties": {
         "plushies:rotation": {
-          "values": { "min": 0, "max": 4 }
+          "values": { "min": 0, "max": 3 }
         },
         "plushies:pose": {
           "values": { "min": 0, "max": 3 }
@@ -46,48 +46,46 @@
         }
       },
       {
-        "condition": "(q.block_property('plushies:pose') == 0)",
+        "condition": "q.block_property('plushies:pose') == 0",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie"
+          "minecraft:geometry": "geometry.warden_plushie_stand"
         }
       },
       {
-        "condition": "(q.block_property('plushies:pose') == 1)",
+        "condition": "q.block_property('plushies:pose') == 1",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie_sitting",
-          "minecraft:collision_box": {
-            "origin": [-8, 0, -2.5],
-            "size": [16, 13, 5]
-          },
-          "minecraft:selection_box": {
-            "origin": [-8, 0, -2.5],
-            "size": [16, 13, 5]
-          }
+          "minecraft:geometry": "geometry.warden_plushie_stand"
         }
       },
       {
-        "condition": "(q.block_property('plushies:pose') == 2)",
+        "condition": "q.block_property('plushies:pose') == 2",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie"
+          "minecraft:geometry": "geometry.warden_plushie_stand"
         }
       },
       {
-        "condition": "(q.block_property('plushies:pose') == 3)",
+        "condition": "q.block_property('plushies:pose') == 3",
         "components": {
-          "minecraft:geometry": "geometry.warden_plushie"
+          "minecraft:geometry": "geometry.warden_plushie_stand"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/flying/warden_plushie.json",
-      "minecraft:geometry": "geometry.warden_plushie",
+      "minecraft:loot": "loot_tables/blocks/allay/stand/warden_plushie_stand.json",
+      "minecraft:geometry": "geometry.warden_plushie_stand",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
       "minecraft:flammable": {
         "catch_chance_modifier": 5,
         "destroy_chance_modifier": 5
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "warden_plushie_stand",
+          "render_method": "alpha_test"
+        }
       },
       "minecraft:collision_box": {
         "origin": [-8, 0, -2.5],
@@ -97,25 +95,19 @@
         "origin": [-8, 0, -2.5],
         "size": [16, 16, 5]
       },
-      "minecraft:material_instances": {
-        "*": {
-          "texture": "warden_plushie",
-          "render_method": "alpha_test"
-        }
-      },
-      "minecraft:on_interact": {
-        "condition": "q.is_sneaking",
-        "event": "pose"
-      },
-      "minecraft:on_player_placing": {
+      "minecraft:on_placed": {
         "event": "set_placement"
       }
     },
+    "minecraft:on_interact": {
+      "condition": "q.is_sneaking",
+      "event": "pose"
+    },
     "events": {
       "set_placement": {
-            "set_block_property": {
-              "plushies:rotation": "query.cardinal_facing_2d-2"
-          }
+        "set_block_property": {
+          "plushies:rotation": "query.cardinal_facing_2d-2"
+        }
       },
       "pose": {
         "sequence": [

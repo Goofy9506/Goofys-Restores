@@ -5,7 +5,7 @@
       "identifier": "plushies:allay_plushie_stand",
       "properties": {
         "plushies:rotation": {
-          "values": { "min": 0, "max": 15 } 
+          "values": { "min": 0, "max": 3 } 
         },
         "plushies:pose": {
           "values": { "min": 0, "max": 3 } 
@@ -14,25 +14,33 @@
     },
     "permutations": [
       {
-        "condition": "(q.block_property('plushies:rotation') >= 4)",
+        "condition": "(q.block_property('plushies:rotation') == 0)",
         "components": {
-          "minecraft:transformation":{
-            "rotation": [0, -90, 0]
-          }
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:rotation') >= 8)",
-        "components": {
-          "minecraft:transformation":{
+          "minecraft:transformation": {
             "rotation": [0, 180, 0]
           }
         }
       },
       {
-        "condition": "(q.block_property('plushies:rotation') >= 12)",
+        "condition": "(q.block_property('plushies:rotation') == 1)",
         "components": {
-          "minecraft:transformation":{
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') == 2)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') == 3)",
+        "components": {
+          "minecraft:transformation": {
             "rotation": [0, 90, 0]
           }
         }
@@ -40,7 +48,7 @@
       {
         "condition": "q.block_property('plushies:pose') == 0",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.allay_plushie_stand"
         }
       },
       {
@@ -52,13 +60,13 @@
       {
         "condition": "q.block_property('plushies:pose') == 2",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.allay_plushie_stand"
         }
       },
       {
         "condition": "q.block_property('plushies:pose') == 3",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.allay_plushie_stand"
         }
       }
     ],
@@ -98,9 +106,9 @@
     "events": {
       "set_placement": {
         "set_block_property": {
-          "plushies:rotation": "q.block_face == 1 ? { t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != Math.abs(q.head_y_rotation(0))); t.block_rotation = Math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation; };"
-        }
-      },
+          "plushies:rotation": "query.cardinal_facing_2d-2"
+      }
+  },
       "pose": {
         "sequence": [
           {
