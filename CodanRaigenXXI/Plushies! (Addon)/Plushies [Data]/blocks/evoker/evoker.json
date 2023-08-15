@@ -2,7 +2,7 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:camel_plushie",
+      "identifier": "plushies:evoker_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
@@ -40,28 +40,32 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.camel_plushie"
+          "minecraft:geometry": "geometry.evoker_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.camel_plushie_sitting",
-                    "minecraft:collision_box": {
-            "origin": [-4.25, 0, -8],
-            "size": [7.5, 8, 15]
-          },
-          "minecraft:selection_box": {
-            "origin": [-4.25, 0, -8],
-            "size": [7.5, 8, 15]
-          }
+          "minecraft:geometry": "geometry.evoker_plushie_sitting"
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:pose') == 2)",
+        "components": {
+          "minecraft:geometry": "geometry.evoker_plushie_celebrate"
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:pose') == 3)",
+        "components": {
+          "minecraft:geometry": "geometry.evoker_plushie"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/flying/camel_plushie.json",
-      "minecraft:geometry": "geometry.camel_plushie",
+      "minecraft:loot": "loot_tables/blocks/ravager/evoker_plushie.json",
+      "minecraft:geometry": "geometry.evoker_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -69,17 +73,9 @@
         "catch_chance_modifier": 5,
         "destroy_chance_modifier": 5
       },
-      "minecraft:collision_box": {
-        "origin": [-3.75, 0, -8],
-        "size": [7.5, 16, 15]
-      },
-      "minecraft:selection_box": {
-        "origin": [-3.75, 0, -8],
-        "size": [7.5, 16, 15]
-      },
       "minecraft:material_instances": {
         "*": {
-          "texture": "camel_plushie",
+          "texture": "evoker_plushie",
           "render_method": "alpha_test"
         }
       },
@@ -107,6 +103,18 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
+            "set_block_property": {
+              "plushies:pose": "2"
+            }
+          },
+          {
+            "condition": "q.block_property('plushies:pose') == 2",
+            "set_block_property": {
+              "plushies:pose": "3"
+            }
+          },
+          {
+            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }

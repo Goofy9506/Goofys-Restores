@@ -29,6 +29,9 @@
       },
       "ravager_evoker_plushie": {
         "textures": "textures/blocks/ravager/ravager_evoker_plushie"
+      },
+      "evoker_plushie": {
+        "textures": "textures/blocks/illager/evoker_plushie"
       }
     },
     "texture_name": "atlas.terrain"
