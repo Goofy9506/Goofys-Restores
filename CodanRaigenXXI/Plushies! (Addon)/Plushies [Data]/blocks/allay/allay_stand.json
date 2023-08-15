@@ -50,7 +50,15 @@
       {
         "condition": "q.block_property('plushies:pose') == 1",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie_idle_stand"
+          "minecraft:geometry": "geometry.allay_plushie_idle_stand",
+          "minecraft:collision_box": {
+            "origin": [-2.5, 0, -2.5],
+            "size": [5, 13, 5]
+          },
+          "minecraft:selection_box": {
+            "origin": [-2.5, 0, -2.5],
+            "size": [5, 13, 5]
+          }
         }
       },
       {
@@ -93,11 +101,11 @@
       },
       "minecraft:on_placed": {
         "event": "set_placement"
+      },
+      "minecraft:on_interact": {
+        "condition": "q.is_sneaking",
+        "event": "pose"
       }
-    },
-    "minecraft:on_interact": {
-      "condition": "q.is_sneaking",
-      "event": "pose"
     },
     "events": {
       "set_placement": {

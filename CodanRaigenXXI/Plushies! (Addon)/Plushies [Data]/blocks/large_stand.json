@@ -1,0 +1,91 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "plushies:large_stand",
+      "properties": {
+        "plushies:rotation": {
+          "values": { "min": 0, "max": 15 }
+        }
+      }
+    },
+    "components": {
+      "tag:stand": {},
+      "minecraft:loot": "loot_tables/blocks/stand.json",
+      "minecraft:geometry": "geometry.large_stand",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 5
+      },
+      "minecraft:collision_box": {
+        "origin": [-2, 0, -2],
+        "size": [4, 9, 4]
+      },
+      "minecraft:selection_box": {
+        "origin": [-2, 0, -2],
+        "size": [4, 9, 4]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "stand",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:on_interact": {
+        "condition": "q.is_item_name_any('slot.weapon.mainhand', 'plushies:warden_plushie')",
+        "event": "plushie"
+      },
+      "minecraft:on_player_placing": {
+        "event": "set_placement"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 4)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 8)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 12)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      }
+    ],
+    "events": {
+      "set_placement": {
+        "set_block_property": {
+          "plushies:rotation": "q.block_face == 1 ? { t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != Math.abs(q.head_y_rotation(0))); t.block_rotation = Math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation; };"
+        }
+      },
+      "plushie": {
+        "sequence": [
+          {
+            "condition": "q.is_item_name_any('slot.weapon.mainhand', 'plushies:warden_plushie')",
+            "run_command": {
+                "command": [
+                    "setblock ~~~ plushies:warden_plushie_stand"
+                ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

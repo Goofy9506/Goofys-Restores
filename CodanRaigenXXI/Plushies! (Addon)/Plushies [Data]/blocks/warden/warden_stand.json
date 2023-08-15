@@ -5,8 +5,8 @@
       "identifier": "plushies:warden_plushie_stand",
       "traits": {
         "minecraft:placement_direction": {
-          "enabled_states": ["minecraft:cardinal_direction"], 
-          "y_rotation_offset": 180 
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
         }
       },
       "properties": {
@@ -92,11 +92,11 @@
       },
       "minecraft:on_placed": {
         "event": "set_placement"
+      },
+      "minecraft:on_interact": {
+        "condition": "q.is_sneaking",
+        "event": "pose"
       }
-    },
-    "minecraft:on_interact": {
-      "condition": "q.is_sneaking",
-      "event": "pose"
     },
     "events": {
       "set_placement": {

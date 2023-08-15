@@ -2,7 +2,7 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:allay_plushie",
+      "identifier": "plushies:camel_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
@@ -40,32 +40,32 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.camel_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie_idle"
+          "minecraft:geometry": "geometry.camel_plushie_sitting"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 2)",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.camel_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 3)",
         "components": {
-          "minecraft:geometry": "geometry.allay_plushie"
+          "minecraft:geometry": "geometry.camel_plushie"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/flying/allay_plushie.json",
-      "minecraft:geometry": "geometry.allay_plushie",
+      "minecraft:loot": "loot_tables/blocks/flying/camel_plushie.json",
+      "minecraft:geometry": "geometry.camel_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -74,16 +74,16 @@
         "destroy_chance_modifier": 5
       },
       "minecraft:collision_box": {
-        "origin": [-2.5, 0, -2.5],
-        "size": [5, 11, 5]
+        "origin": [-3.75, 0, -8],
+        "size": [7.5, 16, 15]
       },
       "minecraft:selection_box": {
-        "origin": [-2.5, 0, -2.5],
-        "size": [5, 11, 5]
+        "origin": [-3.75, 0, -8],
+        "size": [7.5, 16, 15]
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "allay_plushie",
+          "texture": "camel_plushie",
           "render_method": "alpha_test"
         }
       },

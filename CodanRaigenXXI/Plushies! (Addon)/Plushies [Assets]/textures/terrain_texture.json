@@ -17,6 +17,9 @@
       },
       "warden_plushie_stand": {
         "textures": "textures/blocks/warden/warden_plushie_stand"
+      },
+      "camel_plushie": {
+        "textures": "textures/blocks/camel/camel_plushie"
       }
     },
     "texture_name": "atlas.terrain"
