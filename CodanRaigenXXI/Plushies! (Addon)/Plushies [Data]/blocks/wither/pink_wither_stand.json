@@ -73,6 +73,14 @@
           "render_method": "alpha_test"
         }
       },
+      "minecraft:collision_box": {
+        "origin": [-4, 0, -3],
+        "size": [16, 16, 7]
+      },
+      "minecraft:selection_box": {
+        "origin": [-4, 0, -3],
+        "size": [16, 16, 7]
+      },
       "minecraft:on_interact": {
         "condition": "q.is_sneaking",
         "event": "pose"
