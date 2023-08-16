@@ -1,0 +1,75 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "plushies:large_slime_plushie",
+      "properties": {
+        "plushies:rotation": {
+          "values": { "min": 0, "max": 15 }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 4)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, -90, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 8)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:rotation') >= 12)",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      }
+    ],
+    "components": {
+      "tag:plushie": {},
+      "minecraft:loot": "loot_tables/blocks/slime/large_slime_plushie.json",
+      "minecraft:geometry": "geometry.large_slime_plushie",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:flammable": {
+        "catch_chance_modifier": 5,
+        "destroy_chance_modifier": 5
+      },
+      "minecraft:collision_box": {
+        "origin": [-3.75, 0, -8],
+        "size": [7.5, 16, 15]
+      },
+      "minecraft:selection_box": {
+        "origin": [-3.75, 0, -8],
+        "size": [7.5, 16, 15]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "slime_plushie",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:on_player_placing": {
+        "event": "set_placement"
+      }
+    },
+    "events": {
+      "set_placement": {
+        "set_block_property": {
+          "plushies:rotation": "q.block_face == 1 ? { t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != Math.abs(q.head_y_rotation(0))); t.block_rotation = Math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation; };"
+        }
+      }
+    }
+  }
+}

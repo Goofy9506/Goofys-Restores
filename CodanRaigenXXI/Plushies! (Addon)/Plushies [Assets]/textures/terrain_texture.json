@@ -38,6 +38,9 @@
       },
       "pillager_plushie": {
         "textures": "textures/blocks/illager/pillager_plushie"
+      },
+      "slime_plushie": {
+        "textures": "textures/blocks/slime/slime_plushie"
       }
     },
     "texture_name": "atlas.terrain"
