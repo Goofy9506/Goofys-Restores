@@ -62,6 +62,9 @@
       },
       "fox_plushie": {
         "textures": "textures/blocks/fox/fox_plushie"
+      },
+      "moon_cow_plushie": {
+        "textures": "textures/blocks/cow/moon_cow_plushie"
       }
     },
     "texture_name": "atlas.terrain"
