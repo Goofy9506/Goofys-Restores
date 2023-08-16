@@ -2,7 +2,7 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:large_slime_plushie",
+      "identifier": "plushies:small_slime_plushie_stand",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
@@ -37,8 +37,8 @@
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/slime/large_slime_plushie.json",
-      "minecraft:geometry": "geometry.large_slime_plushie",
+      "minecraft:loot": "loot_tables/blocks/slime/small_slime_plushie_stand.json",
+      "minecraft:geometry": "geometry.small_slime_plushie_stand",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
