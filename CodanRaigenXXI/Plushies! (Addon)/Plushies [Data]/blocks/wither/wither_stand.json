@@ -2,13 +2,13 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:sniffer_plushie",
+      "identifier": "plushies:wither_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
         },
         "plushies:pose": {
-          "values": { "min": 0, "max": 3 }
+          "values": { "min": 0, "max": 2 }
         }
       }
     },
@@ -40,32 +40,26 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.sniffer_plushie"
+          "minecraft:geometry": "geometry.wither_plushie_stand"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.sniffer_plushie_long_sniff"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 2)",
-        "components": {
-          "minecraft:geometry": "geometry.sniffer_plushie_short_sniff"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 3)",
-        "components": {
-          "minecraft:geometry": "geometry.sniffer_plushie_sitting"
+          "minecraft:geometry": "geometry.wither_plushie_stand",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wither_invulnerable_plushie",
+              "render_method": "alpha_test"
+            }
+          }
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/sniffer/sniffer_plushie.json",
-      "minecraft:geometry": "geometry.sniffer_plushie",
+      "minecraft:loot": "loot_tables/blocks/wither/wither_plushie_stand.json",
+      "minecraft:geometry": "geometry.wither_plushie_stand",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -75,10 +69,8 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "sniffer_plushie",
-          "render_method": "alpha_test",
-          "ambient_occlusion": true,
-          "face_dimming": false
+          "texture": "wither_plushie",
+          "render_method": "alpha_test"
         }
       },
       "minecraft:on_interact": {
@@ -105,18 +97,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
-            "set_block_property": {
-              "plushies:pose": "2"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }
