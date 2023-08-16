@@ -47,12 +47,12 @@
         "destroy_chance_modifier": 5
       },
       "minecraft:collision_box": {
-        "origin": [-3.75, 0, -8],
-        "size": [7.5, 16, 15]
+        "origin": [-4.6, 0, -3.08],
+        "size": [9, 9, 9]
       },
       "minecraft:selection_box": {
-        "origin": [-3.75, 0, -8],
-        "size": [7.5, 16, 15]
+        "origin": [-4.6, 0, -3.08],
+        "size": [9, 9, 9]
       },
       "minecraft:material_instances": {
         "*": {
