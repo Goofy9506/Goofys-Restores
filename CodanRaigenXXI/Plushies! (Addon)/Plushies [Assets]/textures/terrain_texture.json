@@ -35,6 +35,9 @@
       },
       "vindicator_plushie": {
         "textures": "textures/blocks/illager/vindicator_plushie"
+      },
+      "pillager_plushie": {
+        "textures": "textures/blocks/illager/pillager_plushie"
       }
     },
     "texture_name": "atlas.terrain"
