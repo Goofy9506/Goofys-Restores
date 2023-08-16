@@ -32,6 +32,9 @@
       },
       "evoker_plushie": {
         "textures": "textures/blocks/illager/evoker_plushie"
+      },
+      "vindicator_plushie": {
+        "textures": "textures/blocks/illager/vindicator_plushie"
       }
     },
     "texture_name": "atlas.terrain"

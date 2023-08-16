@@ -64,7 +64,7 @@
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/ravager/evoker_plushie.json",
+      "minecraft:loot": "loot_tables/blocks/illager/evoker_plushie.json",
       "minecraft:geometry": "geometry.evoker_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
