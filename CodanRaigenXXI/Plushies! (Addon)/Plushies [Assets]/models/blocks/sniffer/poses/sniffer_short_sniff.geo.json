@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.sniffer_plushie",
+				"identifier": "geometry.sniffer_plushie_short_sniff",
 				"texture_width": 192,
 				"texture_height": 192,
 				"visible_bounds_width": 4,
@@ -138,7 +138,7 @@
 					"cubes": [
 						{
 							"origin": [-2.925, 8.125, -17.955],
-							"size": [5.85, 0.9, 4.05],
+							"size": [5.85, 1.9, 4.05],
 							"uv": {
 								"north": {"uv": [19, 54], "uv_size": [13, 2]},
 								"east": {"uv": [10, 54], "uv_size": [9, 2]},
