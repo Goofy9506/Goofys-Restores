@@ -2,13 +2,13 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:wither_plushie_stand",
+      "identifier": "plushies:pink_wither_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
         },
         "plushies:pose": {
-          "values": { "min": 0, "max": 2 }
+          "values": { "min": 0, "max": 3 }
         }
       }
     },
@@ -40,16 +40,40 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.wither_plushie_stand"
+          "minecraft:geometry": "geometry.wither_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.wither_plushie_stand",
+          "minecraft:geometry": "geometry.wither_plushie",
           "minecraft:material_instances": {
             "*": {
-              "texture": "wither_invulnerable_plushie",
+              "texture": "wither_invulnerable_pink_plushie",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:pose') == 2)",
+        "components": {
+          "minecraft:geometry": "geometry.wither_plushie_single",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wither_pink_plushie",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "(q.block_property('plushies:pose') == 3)",
+        "components": {
+          "minecraft:geometry": "geometry.wither_plushie_double",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "wither_pink_plushie",
               "render_method": "alpha_test"
             }
           }
@@ -58,8 +82,8 @@
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/wither/wither_plushie_stand.json",
-      "minecraft:geometry": "geometry.wither_plushie_stand",
+      "minecraft:loot": "loot_tables/blocks/wither/wither_plushie.json",
+      "minecraft:geometry": "geometry.wither_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -69,7 +93,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "wither_plushie",
+          "texture": "wither_pink_plushie",
           "render_method": "alpha_test"
         }
       },
@@ -97,6 +121,18 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
+            "set_block_property": {
+              "plushies:pose": "2"
+            }
+          },
+          {
+            "condition": "q.block_property('plushies:pose') == 2",
+            "set_block_property": {
+              "plushies:pose": "3"
+            }
+          },
+          {
+            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }

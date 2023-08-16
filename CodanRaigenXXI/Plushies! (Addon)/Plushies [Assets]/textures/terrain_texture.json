@@ -48,6 +48,12 @@
       "wither_invulnerable_plushie": {
         "textures": "textures/blocks/wither/wither_invulnerable_plushie"
       },
+      "wither_pink_plushie": {
+        "textures": "textures/blocks/wither/wither_pink_plushie"
+      },
+      "wither_invulnerable_pink_plushie": {
+        "textures": "textures/blocks/wither/wither_invulnerable_pink_plushie"
+      },
       "ender_dragon_plushie": {
         "textures": "textures/blocks/ender_dragon/ender_dragon_plushie"
       },
