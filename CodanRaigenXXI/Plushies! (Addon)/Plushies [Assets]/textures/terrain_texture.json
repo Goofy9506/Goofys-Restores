@@ -59,6 +59,9 @@
       },
       "sniffer_plushie": {
         "textures": "textures/blocks/sniffer/sniffer_plushie"
+      },
+      "fox_plushie": {
+        "textures": "textures/blocks/fox/fox_plushie"
       }
     },
     "texture_name": "atlas.terrain"
