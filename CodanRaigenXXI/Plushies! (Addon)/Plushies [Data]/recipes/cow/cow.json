@@ -1,0 +1,35 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "plushies:cow_plushie"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "abd",
+            "bcb",
+            "dba"
+        ],
+        "key": {
+            "a": {
+                "item": "minecraft:white_wool"
+            },
+            "b": {
+                "item": "minecraft:leather"
+            },
+            "c": {
+                "item": "minecraft:beef"
+            },
+            "d": {
+                "item": "minecraft:brown_wool"
+            }
+        },
+        "result": {
+            "item": "plushies:cow_plushie",
+            "data": 0,
+            "count": 1
+        }
+    }
+}
