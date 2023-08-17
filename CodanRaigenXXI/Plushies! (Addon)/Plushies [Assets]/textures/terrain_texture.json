@@ -80,6 +80,12 @@
     },
     "pcg_cow_plushie": {
       "textures": "textures/blocks/cow/pcg_cow_plushie"
+    },
+    "moobloom_plushie": {
+      "textures": "textures/blocks/cow/moobloom_plushie"
+    },
+    "moolip_plushie": {
+      "textures": "textures/blocks/cow/moolip_plushie"
     }
   },
   "texture_name": "atlas.terrain"
