@@ -1,71 +1,86 @@
 {
-    "num_mip_levels": 4,
-    "padding": 8,
-    "resource_pack_name": "vanilla",
-    "texture_data": {
-      "stand": {
-        "textures": "textures/blocks/stand"
-      },
-      "allay_plushie": {
-        "textures": "textures/blocks/allay/allay_plushie"
-      },
-      "warden_plushie": {
-        "textures": "textures/blocks/warden/warden_plushie"
-      },
-      "camel_plushie": {
-        "textures": "textures/blocks/camel/camel_plushie"
-      },
-      "ghast_plushie": {
-        "textures": "textures/blocks/ghast/ghast_plushie"
-      },
-      "ravager_plushie": {
-        "textures": "textures/blocks/ravager/ravager_plushie"
-      },
-      "ravager_pillager_plushie": {
-        "textures": "textures/blocks/ravager/ravager_pillager_plushie"
-      },
-      "ravager_vindicator_plushie": {
-        "textures": "textures/blocks/ravager/ravager_vindicator_plushie"
-      },
-      "ravager_evoker_plushie": {
-        "textures": "textures/blocks/ravager/ravager_evoker_plushie"
-      },
-      "evoker_plushie": {
-        "textures": "textures/blocks/illager/evoker_plushie"
-      },
-      "vindicator_plushie": {
-        "textures": "textures/blocks/illager/vindicator_plushie"
-      },
-      "pillager_plushie": {
-        "textures": "textures/blocks/illager/pillager_plushie"
-      },
-      "slime_plushie": {
-        "textures": "textures/blocks/slime/slime_plushie"
-      },
-      "wither_plushie": {
-        "textures": "textures/blocks/wither/wither_plushie"
-      },
-      "wither_invulnerable_plushie": {
-        "textures": "textures/blocks/wither/wither_invulnerable_plushie"
-      },
-      "wither_pink_plushie": {
-        "textures": "textures/blocks/wither/wither_pink_plushie"
-      },
-      "wither_invulnerable_pink_plushie": {
-        "textures": "textures/blocks/wither/wither_invulnerable_pink_plushie"
-      },
-      "ender_dragon_plushie": {
-        "textures": "textures/blocks/ender_dragon/ender_dragon_plushie"
-      },
-      "sniffer_plushie": {
-        "textures": "textures/blocks/sniffer/sniffer_plushie"
-      },
-      "fox_plushie": {
-        "textures": "textures/blocks/fox/fox_plushie"
-      },
-      "moon_cow_plushie": {
-        "textures": "textures/blocks/cow/moon_cow_plushie"
-      }
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "stand": {
+      "textures": "textures/blocks/stand"
     },
-    "texture_name": "atlas.terrain"
+    "allay_plushie": {
+      "textures": "textures/blocks/allay/allay_plushie"
+    },
+    "warden_plushie": {
+      "textures": "textures/blocks/warden/warden_plushie"
+    },
+    "camel_plushie": {
+      "textures": "textures/blocks/camel/camel_plushie"
+    },
+    "ghast_plushie": {
+      "textures": "textures/blocks/ghast/ghast_plushie"
+    },
+    "ravager_plushie": {
+      "textures": "textures/blocks/ravager/ravager_plushie"
+    },
+    "ravager_pillager_plushie": {
+      "textures": "textures/blocks/ravager/ravager_pillager_plushie"
+    },
+    "ravager_vindicator_plushie": {
+      "textures": "textures/blocks/ravager/ravager_vindicator_plushie"
+    },
+    "ravager_evoker_plushie": {
+      "textures": "textures/blocks/ravager/ravager_evoker_plushie"
+    },
+    "evoker_plushie": {
+      "textures": "textures/blocks/illager/evoker_plushie"
+    },
+    "vindicator_plushie": {
+      "textures": "textures/blocks/illager/vindicator_plushie"
+    },
+    "pillager_plushie": {
+      "textures": "textures/blocks/illager/pillager_plushie"
+    },
+    "slime_plushie": {
+      "textures": "textures/blocks/slime/slime_plushie"
+    },
+    "wither_plushie": {
+      "textures": "textures/blocks/wither/wither_plushie"
+    },
+    "wither_invulnerable_plushie": {
+      "textures": "textures/blocks/wither/wither_invulnerable_plushie"
+    },
+    "wither_pink_plushie": {
+      "textures": "textures/blocks/wither/wither_pink_plushie"
+    },
+    "wither_invulnerable_pink_plushie": {
+      "textures": "textures/blocks/wither/wither_invulnerable_pink_plushie"
+    },
+    "ender_dragon_plushie": {
+      "textures": "textures/blocks/ender_dragon/ender_dragon_plushie"
+    },
+    "sniffer_plushie": {
+      "textures": "textures/blocks/sniffer/sniffer_plushie"
+    },
+    "fox_plushie": {
+      "textures": "textures/blocks/fox/fox_plushie"
+    },
+    "arctic_fox_plushie": {
+      "textures": "textures/blocks/fox/arctic_fox_plushie"
+    },
+    "moon_cow_plushie": {
+      "textures": "textures/blocks/cow/moon_cow_plushie"
+    },
+    "cow_plushie": {
+      "textures": "textures/blocks/cow/cow_plushie"
+    },
+    "mooshroom_plushie": {
+      "textures": "textures/blocks/cow/mooshroom_plushie"
+    },
+    "brown_mooshroom_plushie": {
+      "textures": "textures/blocks/cow/brown_mooshroom_plushie"
+    },
+    "pcg_cow_plushie": {
+      "textures": "textures/blocks/cow/pcg_cow_plushie"
+    }
+  },
+  "texture_name": "atlas.terrain"
 }

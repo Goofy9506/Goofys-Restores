@@ -42,6 +42,12 @@
         "components": {
           "minecraft:geometry": "geometry.moon_cow_plushie"
         }
+      },
+      {
+        "condition": "(q.block_property('plushies:pose') == 1)",
+        "components": {
+          "minecraft:geometry": "geometry.moon_cow_plushie_sitting"
+        }
       }
     ],
     "components": {

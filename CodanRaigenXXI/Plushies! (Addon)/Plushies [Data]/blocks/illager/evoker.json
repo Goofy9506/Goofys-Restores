@@ -8,7 +8,7 @@
           "values": { "min": 0, "max": 15 }
         },
         "plushies:pose": {
-          "values": { "min": 0, "max": 3 }
+          "values": { "min": 0, "max": 2 }
         }
       }
     },
@@ -53,12 +53,6 @@
         "condition": "(q.block_property('plushies:pose') == 2)",
         "components": {
           "minecraft:geometry": "geometry.evoker_plushie_celebrate"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 3)",
-        "components": {
-          "minecraft:geometry": "geometry.evoker_plushie"
         }
       }
     ],
@@ -117,12 +111,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 2",
-            "set_block_property": {
-              "plushies:pose": "3"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 3",
             "set_block_property": {
               "plushies:pose": "0"
             }

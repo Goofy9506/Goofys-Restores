@@ -2,13 +2,13 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:pillager_plushie",
+      "identifier": "plushies:mooshroom_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
         },
         "plushies:pose": {
-          "values": { "min": 0, "max": 3 }
+          "values": { "min": 0, "max": 2 }
         }
       }
     },
@@ -40,26 +40,20 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.pillager_plushie"
+          "minecraft:geometry": "geometry.mooshroom_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.pillager_plushie_sitting"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 2)",
-        "components": {
-          "minecraft:geometry": "geometry.pillager_plushie_celebrate"
+          "minecraft:geometry": "geometry.mooshroom_plushie_sitting"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/illager/pillager_plushie.json",
-      "minecraft:geometry": "geometry.pillager_plushie",
+      "minecraft:loot": "loot_tables/blocks/cow/mooshroom_plushie.json",
+      "minecraft:geometry": "geometry.mooshroom_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -68,16 +62,16 @@
         "destroy_chance_modifier": 5
       },
       "minecraft:collision_box": {
-        "origin": [-4, 0, -3],
-        "size": [8, 16, 5]
+        "origin": [-3, 0, -8],
+        "size": [6, 13, 13]
       },
       "minecraft:selection_box": {
-        "origin": [-4, 0, -3],
-        "size": [8, 16, 5]
+        "origin": [-3, 0, -8],
+        "size": [6, 13, 13]
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "pillager_plushie",
+          "texture": "mooshroom_plushie",
           "render_method": "alpha_test"
         }
       },
@@ -105,12 +99,6 @@
           },
           {
             "condition": "q.block_property('plushies:pose') == 1",
-            "set_block_property": {
-              "plushies:pose": "2"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 2",
             "set_block_property": {
               "plushies:pose": "0"
             }
