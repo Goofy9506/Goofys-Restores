@@ -75,17 +75,26 @@
     "cow_zombie_plushie": {
       "textures": "textures/blocks/cow/jockey/cow_zombie_plushie"
     },
+    "cow_husk_plushie": {
+      "textures": "textures/blocks/cow/jockey/cow_husk_plushie"
+    },
     "mooshroom_plushie": {
       "textures": "textures/blocks/cow/mooshroom_plushie"
     },
     "mooshroom_zombie_plushie": {
       "textures": "textures/blocks/cow/jockey/mooshroom_zombie_plushie"
     },
+    "mooshroom_husk_plushie": {
+      "textures": "textures/blocks/cow/jockey/mooshroom_husk_plushie"
+    },
     "brown_mooshroom_plushie": {
       "textures": "textures/blocks/cow/brown_mooshroom_plushie"
     },
     "brown_mooshroom_zombie_plushie": {
       "textures": "textures/blocks/cow/jockey/brown_mooshroom_zombie_plushie"
+    },
+    "brown_mooshroom_husk_plushie": {
+      "textures": "textures/blocks/cow/jockey/brown_mooshroom_husk_plushie"
     },
     "pcg_cow_plushie": {
       "textures": "textures/blocks/cow/pcg_cow_plushie"
@@ -96,14 +105,26 @@
     "moobloom_zombie_plushie": {
       "textures": "textures/blocks/cow/jockey/moobloom_zombie_plushie"
     },
+    "moobloom_husk_plushie": {
+      "textures": "textures/blocks/cow/jockey/moobloom_husk_plushie"
+    },
     "moolip_plushie": {
       "textures": "textures/blocks/cow/moolip_plushie"
     },
     "moolip_zombie_plushie": {
       "textures": "textures/blocks/cow/jockey/moolip_zombie_plushie"
     },
+    "moolip_husk_plushie": {
+      "textures": "textures/blocks/cow/jockey/moolip_husk_plushie"
+    },
     "zombie_plushie": {
       "textures": "textures/blocks/zombie/zombie_plushie"
+    },
+    "hoglin_piglin_plushie": {
+      "textures": "textures/blocks/hoglin/hoglin_piglin_plushie"
+    },
+    "hoglin_plushie": {
+      "textures": "textures/blocks/hoglin/hoglin_plushie"
     }
   },
   "texture_name": "atlas.terrain"

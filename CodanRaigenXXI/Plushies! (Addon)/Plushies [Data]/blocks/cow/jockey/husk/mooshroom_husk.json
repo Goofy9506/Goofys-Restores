@@ -2,7 +2,7 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:moolip_zombie_plushie",
+      "identifier": "plushies:mooshroom_husk_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
@@ -40,20 +40,20 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.moolip_zombie_plushie"
+          "minecraft:geometry": "geometry.mooshroom_zombie_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.moolip_zombie_plushie_sitting"
+          "minecraft:geometry": "geometry.mooshroom_zombie_plushie_sitting"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/cow/jockey/moolip_zombie_plushie.json",
-      "minecraft:geometry": "geometry.moolip_zombie_plushie",
+      "minecraft:loot": "loot_tables/blocks/cow/jockey/mooshroom_husk_plushie.json",
+      "minecraft:geometry": "geometry.mooshroom_zombie_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -71,7 +71,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "moolip_zombie_plushie",
+          "texture": "mooshroom_husk_plushie",
           "render_method": "alpha_test"
         }
       },

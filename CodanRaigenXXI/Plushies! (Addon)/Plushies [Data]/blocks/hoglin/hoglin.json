@@ -2,7 +2,7 @@
   "format_version": "1.20.10",
   "minecraft:block": {
     "description": {
-      "identifier": "plushies:brown_mooshroom_zombie_plushie",
+      "identifier": "plushies:hoglin_plushie",
       "properties": {
         "plushies:rotation": {
           "values": { "min": 0, "max": 15 }
@@ -40,20 +40,20 @@
       {
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
-          "minecraft:geometry": "geometry.mooshroom_zombie_plushie"
+          "minecraft:geometry": "geometry.hoglin_plushie"
         }
       },
       {
         "condition": "(q.block_property('plushies:pose') == 1)",
         "components": {
-          "minecraft:geometry": "geometry.mooshroom_zombie_plushie_sitting"
+          "minecraft:geometry": "geometry.hoglin_plushie_sitting"
         }
       }
     ],
     "components": {
       "tag:plushie": {},
-      "minecraft:loot": "loot_tables/blocks/cow/jockey/brown_mooshroom_zombie_plushie.json",
-      "minecraft:geometry": "geometry.mooshroom_zombie_plushie",
+      "minecraft:loot": "loot_tables/blocks/hoglin/hoglin_plushie.json",
+      "minecraft:geometry": "geometry.hoglin_plushie",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },
@@ -62,16 +62,16 @@
         "destroy_chance_modifier": 5
       },
       "minecraft:collision_box": {
-        "origin": [-3, 0, -8],
-        "size": [6, 13, 13]
+        "origin": [-8, 0, -3.25],
+        "size": [16, 16, 7]
       },
       "minecraft:selection_box": {
-        "origin": [-3, 0, -8],
-        "size": [6, 13, 13]
+        "origin": [-8, 0, -3.25],
+        "size": [16, 16, 7]
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "brown_mooshroom_zombie_plushie",
+          "texture": "hoglin_plushie",
           "render_method": "alpha_test"
         }
       },
