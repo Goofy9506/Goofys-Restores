@@ -18,7 +18,7 @@
         "components": {
           "minecraft:transformation": {
             "rotation": [0, -90, 0],
-            "translation": [0, 0.25, 0],
+            "translation": [0, 0.15, 0],
             "scale": [1.25, 1.25, 1.25]
           }
         }
@@ -28,7 +28,7 @@
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 180, 0],
-            "translation": [0, 0.25, 0],
+            "translation": [0, 0.15, 0],
             "scale": [1.25, 1.25, 1.25]
           }
         }
@@ -38,7 +38,7 @@
         "components": {
           "minecraft:transformation": {
             "rotation": [0, 90, 0],
-            "translation": [0, 0.25, 0],
+            "translation": [0, 0.15, 0],
             "scale": [1.25, 1.25, 1.25]
           }
         }
@@ -47,12 +47,6 @@
         "condition": "(q.block_property('plushies:pose') == 0)",
         "components": {
           "minecraft:geometry": "geometry.hoglin_3x_plushie"
-        }
-      },
-      {
-        "condition": "(q.block_property('plushies:pose') == 1)",
-        "components": {
-          "minecraft:geometry": "geometry.hoglin_3x_plushie_sitting"
         }
       }
     ],
@@ -86,7 +80,7 @@
         "event": "pose"
       },
       "minecraft:transformation": {
-        "translation": [0, 0.25, 0],
+        "translation": [0, 0.15, 0],
         "scale": [1.25, 1.25, 1.25]
       },
       "minecraft:on_player_placing": {
@@ -98,22 +92,6 @@
         "set_block_property": {
           "plushies:rotation": "q.block_face == 1 ? { t.positive_head_rot = q.head_y_rotation(0) + 360 * (q.head_y_rotation(0) != Math.abs(q.head_y_rotation(0))); t.block_rotation = Math.round(t.positive_head_rot / 22.5); return t.block_rotation != 16 ? t.block_rotation; };"
         }
-      },
-      "pose": {
-        "sequence": [
-          {
-            "condition": "q.block_property('plushies:pose') == 0",
-            "set_block_property": {
-              "plushies:pose": "1"
-            }
-          },
-          {
-            "condition": "q.block_property('plushies:pose') == 1",
-            "set_block_property": {
-              "plushies:pose": "0"
-            }
-          }
-        ]
       }
     }
   }
